@@ -4,11 +4,15 @@ The `BigUniversityRDB` repository contains SQL DDL, DML, and supporting document
 
 To understand the scope and semantics of these scripts, make sure to first see the contents of the [SmallUniversityRDB Github repository](https://github.com/Yeshiva-University-CS/SmallUniversityRDB).
 
+**Important: the schema for the large database is _identical_ to that of the small database, except that the small database tables have an appended "_s" for all table names**
+
 ## Contents
 
-* `DDL.sql`: invoke this script when creating the database tables for the first time
-* `DDLAndDrop.sql`: invoke this script use this if you wish to recreate the database after dropping existing tables.
-* `populateLargeTables.sql`: populates the database tables.
+* LargeRDBTableSizes.png: describes the size of the database tables
+* README.md: this file
+* largeDDLAndDrop.sql: DDL for deleting and creating the schema
+* largeRelationsInsertFile.sql: the population script
+
 
 ## Database Tables
 
